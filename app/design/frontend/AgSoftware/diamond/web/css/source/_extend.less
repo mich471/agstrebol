@@ -1,11 +1,27 @@
-//
+ //@import url('fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+ 
+ @import "_typography.less";
+
+ @color-oscuro: #1a1a1a;
+ @color-claro: #ffffff;
+ @color-primario: #4545e1;
+ @color-neutro: #666666;
+ @color-secundario: #1787e0;
+ @fuente-primaria:  'Roboto', 'sans-serif';
 //  Common
 //  _____________________________________________
 
 & when (@media-common = true) {
 
     body{
-        //background-color: #090090!important;
+        p{
+           
+            font-family: 'Roboto', sans-serif;
+            color: @color-oscuro;
+        }
+        
+        //background-color:@color-oscuro;
+        
     }
 
 
