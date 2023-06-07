@@ -1,12 +1,28 @@
-@import "_footer";
+//
+// VARIABLES
+//
+
+@color-oscuro: #1a1a1a;
+@color-claro: #ffffff;
+@color-primario: #4545e1;
+@color-neutro: #666666;
+@color-secundario: #1787e0;
+@fuente-primaria:  'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@fuente-secundaria:  'Gilroy', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 //
 //  Common
 //  _____________________________________________
 
 & when (@media-common = true) {
 
-    body{
-        //background-color: #090090!important;
+    body {
+        color: #1a1a1a;
+        font-family: @fuente-primaria;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 1.6rem;
     }
 
 
@@ -25,7 +41,7 @@
 
 
 //
-//  Deskto
+//  Desktop
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
