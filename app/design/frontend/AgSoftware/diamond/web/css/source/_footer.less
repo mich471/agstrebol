@@ -62,6 +62,27 @@
                             .copy-right p, .imagen-container{
                                 text-align: start !important;
                                 margin-left: 8px;
+
+                            }
+                            .imagen-container {
+                                img{
+                                    width: 56px;
+                                    height: 31px;
+                                }
+                            }
+                            .up{
+                               color: red;
+                                &::after{
+                                    content:"";
+                                    transform: rotate(223deg);
+                                    width: 8px;
+                                    height: 8px;
+                                    border-right: 1px solid #a8a8a8;
+                                    border-bottom: 1px solid #a8a8a8;
+                                    position: relative;
+                                    right: 20px;
+                                    top: 25px;
+                                }
                             }
                         }
                     }
