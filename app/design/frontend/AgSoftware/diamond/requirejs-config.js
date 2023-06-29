@@ -4,7 +4,15 @@
  */
 
 var config = {
+    paths: {
+        "slickCarousel": 'js/slick.min',
+    },
+    shim:{
+        'slickCarousel':{
+            'deps':['jquery']
+        }
+    },
     deps: [
-        "js/collapsible_footer"
+        "js/prueba"
     ]
 };
