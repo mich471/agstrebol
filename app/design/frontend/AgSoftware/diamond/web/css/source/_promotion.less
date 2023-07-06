@@ -1,0 +1,321 @@
+//
+//  Common
+//  _____________________________________________
+& when (@media-common = true) {
+    .cms-home {
+        .page-wrapper {
+            .page-main {
+                .columns {
+                    .column {
+                        .block-static-block {
+                            .shop-now {
+                                .amsite-homepage-promotion {
+                                    text-align: center;
+                                    text-align: center;
+                                    margin-bottom: 66px;
+                                    .amsite-content {
+                                        .masty-text {
+                                            letter-spacing: 0;
+                                            font-size: 4.8rem;
+                                            line-height: 5.3rem;
+                                            margin-bottom: 25px;
+                                            font-weight: 700;
+                                            font-family: "Roboto",
+                                                "Helvetica Neue", Helvetica,
+                                                Arial, sans-serif;
+                                            .amsite-color {
+                                                color: #4545e1;
+                                            }
+                                        }
+                                        .primarys {
+                                            width: 100%;
+                                            max-width: 270px;
+                                            display: inline-block;
+                                            text-decoration: none;
+                                            background: #ff5b0f;
+                                            border: 0;
+                                            color: #fff;
+                                            cursor: pointer;
+                                            display: inline-block;
+                                            font-family: "Roboto",
+                                                "Helvetica Neue", Helvetica,
+                                                Arial, sans-serif;
+                                            font-weight: 700;
+                                            padding: 15px 35px;
+                                            font-size: 1.4rem;
+                                            line-height: 1.9rem;
+                                            box-sizing: border-box;
+                                            vertical-align: middle;
+                                            text-transform: uppercase;
+                                            white-space: nowrap;
+                                            letter-spacing: 0.09em;
+                                            transition: all 0.4s ease-in-out;
+                                        }
+                                    }
+                                }
+                            }
+                            .homepage-picker-wrapper {
+                                justify-content: space-between;
+                                margin-top: 0px;
+                                padding: 0px;
+                                margin-bottom: 80px;
+                                text-align: center;
+                                .amsite-picture {
+                                    display: none;
+                                }
+                                .homepage-picker-title {
+                                    letter-spacing: 0;
+                                    font-size: 4.8rem;
+                                    line-height: 5.3rem;
+                                    margin-bottom: 25px;
+                                    font-weight: 700;
+                                    font-family: "Roboto", "Helvetica Neue",
+                                        Helvetica, Arial, sans-serif;
+                                }
+                                .amform-parent {
+                                    display: flex;
+                                    justify-content: center;
+
+                                    .amform-show-popup.amcform-button {
+                                        color: rgb(255, 255, 255);
+                                        cursor: pointer;
+                                        display: inline-block;
+                                        font-family: Roboto, "Helvetica Neue",
+                                            Helvetica, Arial, sans-serif;
+                                        font-weight: 700;
+                                        font-size: 1.4rem;
+                                        line-height: 1.9rem;
+                                        box-sizing: border-box;
+                                        vertical-align: middle;
+                                        text-transform: uppercase;
+                                        letter-spacing: 0.09em;
+                                        background: rgb(23, 135, 224);
+                                        border-width: 0px;
+                                        padding: 15px 35px;
+                                        min-width: 120px;
+                                        white-space: nowrap;
+                                        transition: all 0.4s ease-in-out 0s;
+                                    }
+                                    .amform-show-popup {
+                                        box-shadow: none;
+                                        position: relative;
+                                        align-items: center;
+                                        justify-content: center;
+                                        pointer-events: auto;
+                                        user-select: none;
+                                        border-radius: 3px;
+                                    }
+                                }
+                            }
+                        }
+                        .block-static-block {
+                            [data-content-type="row"] {
+                                .pinture-comunity {
+                                    display: none !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .cms-home {
+        .page-wrapper {
+            .page-main {
+                .columns {
+                    .column {
+                        .block-static-block {
+                            .shop-now {
+                                .amsite-homepage-promotion {
+                                    .amsite-content {
+                                        .masty-text {
+                                            letter-spacing: 0.01em;
+                                            font-size: 2.4rem;
+                                            line-height: 3rem;
+                                        }
+                                    }
+                                }
+                            }
+                            .homepage-picker-wrapper {
+                                .homepage-picker-title {
+                                    letter-spacing: 0.01em;
+                                    font-size: 2.4rem;
+                                    line-height: 3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 479px) {
+    .cms-home {
+        .page-wrapper {
+            .page-main {
+                .columns {
+                    .column {
+                        .block-static-block {
+                            .shop-now {
+                                .amsite-homepage-promotion {
+                                    .amsite-content {
+                                        .masty-text {
+                                            letter-spacing: 0.0074em;
+                                            font-size: 3.4rem;
+                                            line-height: 4.2rem;
+                                        }
+                                    }
+                                }
+                            }
+                            .homepage-picker-wrapper {
+                                .homepage-picker-title {
+                                    letter-spacing: 0.0074em;
+                                    font-size: 3.4rem;
+                                    line-height: 4.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//
+//  Mobile
+//  _____________________________________________
+.media-width(@extremum, @break)
+    when
+    (@extremum = "max")
+    and
+    (@break = @screen__m) {
+}
+
+//
+//  Desktop
+//  _____________________________________________
+.media-width(@extremum, @break)
+    when
+    (@extremum = "min")
+    and
+    (@break = @screen__m) {
+}
+
+@media only screen and (min-width: 1024px) {
+    .cms-home {
+        .page-wrapper {
+            .page-main {
+                .columns {
+                    .column {
+                        .block-static-block {
+                            .shop-now {
+                                .amsite-homepage-promotion {
+                                    .amsite-content {
+                                        .masty-text {
+                                            margin-bottom: 45px;
+                                            max-width: 1080px;
+                                            margin: 0px auto 25px;
+                                        }
+                                    }
+                                }
+                            }
+                            .homepage-picker-wrapper {
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                height: 115px;
+                                padding: 0px 50px;
+                                .amsite-picture {
+                                    position: absolute;
+                                    top: 0px;
+                                    left: 0px;
+                                    display: block;
+                                }
+                                .homepage-picker-title {
+                                    text-align: center;
+                                    position: relative;
+                                    color: rgb(37, 51, 101);
+                                    letter-spacing: 0.25px;
+                                    font-size: 2.7rem;
+                                    margin: 0px 35px 0px 0px;
+                                    line-height: 4.2rem;
+                                }
+                            }
+                        }
+                        .block-static-block {
+                            [data-content-type="row"] {
+                                .pinture-comunity {
+                                    display: block !important;
+
+                                    .block-pinture-comunity {
+                                        .pagebuilder-column-line {
+                                            .block-imagen-lef {
+                                                justify-content: flex-start;
+                                                display: flex;
+                                                flex-direction: column;
+                                                background-size: cover;
+                                                width: 48% !important;
+                                                align-self: stretch;
+                                            }
+                                            .block-imagen-right {
+                                                justify-content: flex-start;
+                                                display: flex;
+                                                flex-direction: column;
+                                                width: 53% !important;
+                                                align-self: stretch;
+
+                                                .title-commuty {
+                                                    letter-spacing: 0.01em;
+                                                    font-size: 2.4rem;
+                                                    line-height: 3rem;
+                                                }
+                                                .text-comunity {
+                                                    letter-spacing: 0.01em;
+                                                    font-size: 2.4rem;
+                                                    line-height: 3rem;
+                                                }
+                                                .texto-secundary {
+                                                    margin-bottom: 13px;
+                                                    color: #666;
+                                                }
+                                                .Learmi-boten {
+                                                    .bonton-leer {
+                                                        .pagebuilder-button-primary {
+                                                            background: #1787e0;
+                                                            border: 0;
+                                                            color: #fff;
+                                                            cursor: pointer;
+                                                            display: inline-block;
+                                                            font-family: "Roboto",
+                                                                "Helvetica Neue",
+                                                                Helvetica, Arial,
+                                                                sans-serif;
+                                                            font-weight: 700;
+                                                            margin: 0;
+                                                            padding: 15px 35px;
+                                                            font-size: 1.4rem;
+                                                            line-height: 1.9rem;
+                                                            box-sizing: border-box;
+                                                            vertical-align: middle;
+                                                            border-radius: 4px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
